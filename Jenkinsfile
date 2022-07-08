@@ -5,13 +5,13 @@ pipeline{
     stage("build"){
       steps{
         echo 'building the app'
-        sh 'javac abc.java'
+        bat 'javac abc.java'
       }
     }
     stage("test"){
       steps{
         echo 'testing the app'
-        sh 'java abc'
+        bat 'java abc'
       }
     }
     stage("deploy"){
